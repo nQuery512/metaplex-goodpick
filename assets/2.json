@@ -1,0 +1,26 @@
+{
+    "name": "Test NFT #2",
+    "symbol": "",
+    "description": "Run test",
+    "seller_fee_basis_points": 0,
+    "image": "2.png",
+    "attributes": [
+        {
+            "trait_type": "rarity",
+            "value": "epicc"
+        },
+        {
+            "trait_type": "color",
+            "value": "diamond"
+        }
+    ],
+    "properties": {
+        "category":"image",
+        "creators": [
+            { "address": "CSD5ugkhcw8K74iBdZUefSKBzcpjkzy57ZH92yKDyjmc", "share": 100 }
+        ],
+        "files":[
+            {"uri":"2.png", "type":"image/png"}
+        ]
+    }
+}

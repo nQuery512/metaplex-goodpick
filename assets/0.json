@@ -1,0 +1,27 @@
+{
+    "name": "Test NFT #0",
+    "symbol": "TOTO",
+    "description": "Run test",
+    "seller_fee_basis_points": 0,
+    "image": "0.png",
+    "edition": "2021 limited edition",
+    "attributes": [
+        {
+            "trait_type": "rarity",
+            "value": "epic"
+        },
+        {
+            "trait_type": "color",
+            "value": "bluebrown"
+        }
+    ],
+    "properties": {
+        "category":"image",
+        "creators": [
+            { "address": "H3j6mUMJa64kuDSqi5rmLxYqrDmU4nVd4jiTkezy7zEM", "share": 100 }
+        ],
+        "files":[
+            {"uri":"0.png", "type":"Image/png"}
+        ]
+    }
+}
