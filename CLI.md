@@ -1,11 +1,12 @@
 # Metaplex Command line interface 
 ## Description
 Installing this tools will allow you to use Metaplex functionnality, without the store to spin up a store, very useful.
-At the end of this tutorial you will be able to mint 
+At the end of this tutorial you will be able to prepare everything to be able to build a fair launch using the Metaplex Candy Machine.
 ## Prerequisite
 
 To be able to start creating your own NFT massively, you need to install these packages 
 
+- [node/NPM]()
 - [yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
 - [Solana CLI](https://docs.solana.com/cli/install-solana-cli-tools)
 
@@ -49,7 +50,11 @@ INSERT UPLOAD COST HERE
 
 ### Metadata template
 
+Metaplex Metadata full documentation can be found [here](https://docs.metaplex.com/nft-standard), I HIGHLY recommand that you read it and keep it while building your metadata
+
+
 For each distinct NFT you plan to create, you need to create a file similar to 
+
 
 
 After uploaded correctly, your upload should look like this on [arweave](https://jw4aqnpgl6gt3ma7dnfmhrbz62knne7uoly3ypxwkfejnlkf27ia.arweave.net/TbgINeZfjT2wHxtKw8Q59pTWk_Ry8bw-9lFIlq1F19A/)
