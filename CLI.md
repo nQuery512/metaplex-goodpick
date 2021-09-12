@@ -16,4 +16,16 @@ Once these packages installed, you must be able to use the solana CLI using
 ## Installation
 
 - Clone this repo
-- Navigate into it by using ```cd metaplex-goodpick/js/```
+- Navigate into it by using ```cd metaplex-goodpick/js/packages/cli```
+- Run ```yarn install```
+- Then ```yarn build```
+- Then ```yarn run package:macos``` or  ```yarn run package:linux``` depending on your system OS (not tested on windows yet)
+
+Some people have trouble with yarn run package:macos
+If it’s not working for you, the common workaround has been
+npx pkg . -d --targets node14-macos-x64 --output bin/macos/metaplex
+
+Then you'll be able to use the metaplex command line interface 
+You can try using it by typing
+```metaplex -h```
+
