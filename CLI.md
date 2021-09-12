@@ -99,7 +99,10 @@ Personally, I created a directory in the metaplex folder and I've put all my fil
 you'll need to change the following commands
 
 First, let's upload our file, be carefull, this is the part that cost you money,
-The program do a SOL swap
+The program do a SOL swap to AR which is the currency of the Arweave blockchain to be able to upload your files to the Arweave FS
+Then it sends your file.
+
+Since the upload coast is based on the size of your files, you should optimize the size of your files.
 
 
 After uploaded correctly, your upload should look like this on [arweave](https://jw4aqnpgl6gt3ma7dnfmhrbz62knne7uoly3ypxwkfejnlkf27ia.arweave.net/TbgINeZfjT2wHxtKw8Q59pTWk_Ry8bw-9lFIlq1F19A/)
