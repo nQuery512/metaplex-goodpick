@@ -16,6 +16,9 @@ To get $SOL on devnet/testnet it's [HERE](https://solfaucet.com/)
 Once these packages installed, you must be able to use the solana CLI using
 ```solana -h```
 
+
+Since the upload coast is based on the size of your files, you should optimize the size of your files! 
+
 ## Installation
 
 - Clone this repo
@@ -93,16 +96,28 @@ For each distinct NFT you plan to create, you need to create a file similar to t
 }
 ```
 
-### Start upload
-You should go into your metaplex directory (where you cloned this repository),
-Personally, I created a directory in the metaplex folder and I've put all my file and metadata in there, so if you didn't
-you'll need to change the following commands
 
+You should go into your metaplex directory (where you cloned this repository),
+Personally, I created a directory in the metaplex folder named 'assets' and I've put all my file and metadata in there, so if you didn't
+you'll need to change the following commands.
+
+### Start upload
 First, let's upload our file, be carefull, this is the part that cost you money,
 The program do a SOL swap to AR which is the currency of the Arweave blockchain to be able to upload your files to the Arweave FS
 Then it sends your file.
 
-Since the upload coast is based on the size of your files, you should optimize the size of your files.
+Let's run the following command
+
+```
+metaplex upload /home/dev/metaplex_good/assets --keypair /home/dev/.config/solana/devnet.json --env devnet
+```
+
+The first argument is your asset path, then --keypair is the path of your keypair usually located in ~/.config/solana/
+The third argument is the network you want to use, here we are using devnet
+
+
+
+
 
 
 After uploaded correctly, your upload should look like this on [arweave](https://jw4aqnpgl6gt3ma7dnfmhrbz62knne7uoly3ypxwkfejnlkf27ia.arweave.net/TbgINeZfjT2wHxtKw8Q59pTWk_Ry8bw-9lFIlq1F19A/)
