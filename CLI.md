@@ -23,7 +23,7 @@ Once these packages installed, you must be able to use the solana CLI using
 
 Some people have trouble with yarn run package:macos
 If it’s not working for you, the common workaround has been
-npx pkg . -d --targets node14-macos-x64 --output bin/macos/metaplex
+```npx pkg . -d --targets node14-macos-x64 --output bin/macos/metaplex```
 
 Then you'll be able to use the metaplex command line interface 
 You can try using it by typing
