@@ -18,7 +18,11 @@ If you want to deep dive on the Architecture, you can do so here:
 
 https://docs.metaplex.com/
 
+YOU NEED TO RUN THE FOLLWOWING GUIDE ONLY IF YOU BUILD YOUR OWN STORE, ELSE
+YOU CAN GO  [here](https://github.com/nQuery512/metaplex-goodpick/blob/main/CLI.md)
+
 ## Installing
+
 
 Clone the repo, and run `yarn start` to deploy.
 
