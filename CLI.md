@@ -35,8 +35,14 @@ Then you'll be able to use the metaplex command line interface
 You can try using it by typing
 ```metaplex -h```
 
+In the following tutorial, if a Metaplex command is not clear, you can just do ``` metaplex help [COMMAND]```, for exemple: ```metaplex help upload```.
+
+It'll show you a description of the function and the available parameters
+
 ## Wallet configuration (optional)
 You should have configured the same wallet on phantom and the solana cli in order to simplify this process,
+
+This is required if you want to give you some NFTs using the mint_one_command() Metaplex CLI function, but you can do it also from the frontend without the need to do this section 
 
 COMING SOON
 
@@ -115,8 +121,13 @@ metaplex upload /home/dev/metaplex_good/assets --keypair /home/dev/.config/solan
 The first argument is your asset path, then --keypair is the path of your keypair usually located in ~/.config/solana/
 The third argument is the network you want to use, here we are using devnet
 
+When the command succeed, you should see something like this :
 
 
+Note: If some uploads doesn't succeed that's not uncommon, in fact; when you upload massively, it'll happen, but we got you covered.
+What you need to do is to relaunch the same command.
+Since Metaplex is using a cache in ~/metaplex_goodpick/.cache, it keep tracking of which files suceed to be uploaded and the one who fails
+That means that once a file is correctly uploaded, you can restart the command and it'll be skipped, you will not have to pay for it
 
 
 
