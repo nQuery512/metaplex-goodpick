@@ -107,9 +107,11 @@ Personally, I created a directory in the metaplex folder named 'assets' and I've
 you'll need to change the following commands.
 
 ### File Preparation
+/!\ **Warning**: At the moment (13/09/21), there is no way to upload other files than .png and .json for source files, if this isnt correctly patched soon,
+we will deploy our own patch.
 
-In this assets directory, you should put all the files (JSON and IMG, )
 
+In this assets directory, you should put all the files (JSON and IMG)
 ### Start upload
 First, let's upload our files, be carefull, this is the part that cost you money,
 The program do a SOL swap to AR which is the currency of the Arweave blockchain to be able to upload your files to the Arweave FS
@@ -163,10 +165,10 @@ You can specify the price user pays in $SOL with the --price argument
 Run the command, you should see an output in your terminal similar to this one:
 
 ```
-create_candy_machine Done: AE1zUCxpmPDeL3nKY95sSSETwkSYo93Ps14NiCRJ9YeA
+create_candy_machine Done: **AE1zUCxpmPDeL3nKY95sSSETwkSYo93Ps14NiCRJ9YeA**
 ```
 
-KEEP THIS ID, it'll be required further in this guide in order to connect your frontend to the candy-machine you just created ! 
+**KEEP THIS ID**, it'll be required further in this guide in order to connect your frontend to the candy-machine you just created ! 
 
 You can use the command ```metaplex verify --keypair ~/.config/solana/devnet.json ``` to check if the mint 
 It'll print the state of each upload with the state of the candy-machine !
