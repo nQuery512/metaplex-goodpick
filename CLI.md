@@ -125,10 +125,11 @@ The third argument is the network you want to use, here we are using devnet
 When the command succeed, you should see something like this :
 
 
+
 Note: If some uploads doesn't succeed that's not uncommon, in fact; when you upload massively, it'll happen, but we got you covered.
 What you need to do is to relaunch the same command.
-Since Metaplex is using a cache in ~/metaplex_goodpick/.cache, it keep tracking of which files suceed to be uploaded and the one who fails
-That means that once a file is correctly uploaded, you can restart the command and it'll be skipped, you will not have to pay for it
+Since Metaplex is using a cache in ~/metaplex_goodpick/.cache, it keep tracks of which files suceed to be uploaded and the one who fails
+That means that once a file is correctly uploaded, you can restart the command to upload the files who failed and  the good one will be skipped, you will not have to pay for them again and they won't be uploaded 
 
 
 
