@@ -155,8 +155,8 @@ In this section we will use 2 command of the metaplex CLI to, first, enable your
 
 #### Enable the candy machine
 In the metaplex directory, run the following command:
-metaplex create_candy_machine --price 0 --keypair ~/.config/solana/devnet.json
-``````
+```metaplex create_candy_machine --price 0 --keypair ~/.config/solana/devnet.json```
+You can specify the price in $SOL with the --price argument 
 
 You can use the command ```metaplex verify --keypair ~/.config/solana/devnet.json ``` to check if the mint 
 It'll print the state of each upload with the state of the candy-machine !
