@@ -59,13 +59,11 @@ Metadata defines your file and should be correctly setup, in most case, their is
 
 You'll be able to find an Arweave fee calculator based on the size of the files you want to upload, see [HERE](https://55mcex7dtd5xf4c627v6hadwoq6lgw6jr4oeacqd5k2mazhunejq.arweave.net/71giX-OY-3LwXtfr44B2dDyzW8mPHEAKA-q0wGT0aRM)
 
-INSERT UPLOAD COST HERE
-
 ### Metadata template
 
 Metaplex Metadata full documentation can be found [here](https://docs.metaplex.com/nft-standard), I HIGHLY recommand that you read it and keep it while building your metadata,
 
-For each distinct NFT you plan to create, you need to create a file similar to this one
+For each distinct NFT you plan to create, you need to create a .json file similar to this one
 
 ```
 {
@@ -108,12 +106,16 @@ You should go into your metaplex directory (where you cloned this repository),
 Personally, I created a directory in the metaplex folder named 'assets' and I've put all my file and metadata in there, so if you didn't
 you'll need to change the following commands.
 
+### File Preparation
+
+In this assets directory, you should put all the files (JSON and IMG, )
+
 ### Start upload
-First, let's upload our file, be carefull, this is the part that cost you money,
+First, let's upload our files, be carefull, this is the part that cost you money,
 The program do a SOL swap to AR which is the currency of the Arweave blockchain to be able to upload your files to the Arweave FS
 Then it sends your file.
 
-Let's run the following command
+Let's run the following command:
 
 ```
 metaplex upload /home/dev/metaplex_good/assets --keypair /home/dev/.config/solana/devnet.json --env devnet
@@ -124,13 +126,20 @@ The third argument is the network you want to use, here we are using devnet
 
 When the command succeed, you should see something like this :
 
+```
+// Here I upload 4 images, named from 0.png to 3.png, same for metadata 0.json, 1.json... 
+setting cache for 3
+Writing indices 0-3
+Done. Successful = true. If 'false' - rerun
+```
+
+You should look into the full logs printed to your console, to see if anything went wrong,
+also, you are able to read the cache to find everything information needed, it's print a synthetized json with info on each sets and
 
 
 Note: If some uploads doesn't succeed that's not uncommon, in fact; when you upload massively, it'll happen, but we got you covered.
 What you need to do is to relaunch the same command.
-Since Metaplex is using a cache in ~/metaplex_goodpick/.cache, it keep tracks of which files suceed to be uploaded and the one who fails
-That means that once a file is correctly uploaded, you can restart the command to upload the files who failed and  the good one will be skipped, you will not have to pay for them again and they won't be uploaded 
-
-
+Since Metaplex is using a cache in ~/metaplex_goodpick/.cache, it keep tracks of which files succccccccccceed to be uploaded and the one who fails
+That means that once a file is correctly uploaded, you can restart the command to upload the files who failed and the good one will be skipped, you will not have to pay for them again and they won't be uploaded, 
 
 After uploaded correctly, your upload should look like this on [arweave](https://jw4aqnpgl6gt3ma7dnfmhrbz62knne7uoly3ypxwkfejnlkf27ia.arweave.net/TbgINeZfjT2wHxtKw8Q59pTWk_Ry8bw-9lFIlq1F19A/)
