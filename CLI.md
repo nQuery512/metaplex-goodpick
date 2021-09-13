@@ -138,9 +138,11 @@ You should look into the full logs printed to your console, to see if anything w
 Also, you are able to read the cache to find every informations needed, it's print a synthetized json with info on each sets and it also show upload link of each images
 (We plan to releasing a script to help you getting all the upload link)
 
-Note: If some uploads doesn't succeed that's not uncommon, in fact; when you upload massively, it'll happen, but we got you covered.
+Note: If some uploads doesn't succeed that's not uncommon, in fact, when you upload massively, it'll happen, but we got you covered.
+
 What you need to do is to relaunch the same command.
-Since Metaplex is using a cache in ~/metaplex_goodpick/.cache, it keep tracks of which files succccccccccceed to be uploaded and the one who fails
+
+Since Metaplex is using a cache in ~/metaplex_goodpick/.cache, it keep tracks of which files succeed to be uploaded and the one who fails
 That means that once a file is correctly uploaded, you can restart the command to upload the files who failed and the good one will be skipped, you will not have to pay for them again and they won't be uploaded, 
 
 After uploaded correctly, your upload should look like this on [arweave](https://jw4aqnpgl6gt3ma7dnfmhrbz62knne7uoly3ypxwkfejnlkf27ia.arweave.net/TbgINeZfjT2wHxtKw8Q59pTWk_Ry8bw-9lFIlq1F19A/)
