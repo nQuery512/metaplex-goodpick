@@ -122,7 +122,9 @@ metaplex upload ~/metaplex_good/assets --keypair ~/.config/solana/devnet.json --
 ```
 
 The first argument is your asset path, 
+
 Then --keypair is the path of your keypair usually located in ~/.config/solana/ where ~ is your home directory (/home/dev/ for exemple)
+
 The third argument is the network you want to use, here we are using devnet
 
 When the command succeed, you should see something like this :
