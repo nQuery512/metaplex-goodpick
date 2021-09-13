@@ -6,7 +6,7 @@ At the end of this tutorial you will be able to prepare everything to be able to
 
 To be able to start creating your own NFT massively, you need to install these packages 
 
-- [node/NPM]()
+- [node/NPM](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/)
 - [yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
 - [Solana CLI](https://docs.solana.com/cli/install-solana-cli-tools)
 
@@ -172,4 +172,21 @@ create_candy_machine Done: **AE1zUCxpmPDeL3nKY95sSSETwkSYo93Ps14NiCRJ9YeA**
 
 You can use the command ```metaplex verify --keypair ~/.config/solana/devnet.json ``` to check if the mint 
 It'll print the state of each upload with the state of the candy-machine !
+
+#### Set start date
+In the metaplex directory, run the following command:
+```
+metaplex set_start_date --keypair ~/.config/solana/devnet.json -d "04 Dec 1995 00:12:00 GMT"
+```
+
+#### Try out the candy machine
+If you want to try out the candy machine, feel free to run the following command in order to mint into your wallet
+ps: With this command, you can only send to the wallet linked to the keypair you provide
+
+```
+metaplex mint_one_token --keypair ~/.config/solana/devnet.json
+```
+
+After executing this command you should receive the NFT instantly in your wallet but that mean that your candy machine lost one on its NFT
+
 
