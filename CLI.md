@@ -56,7 +56,8 @@ Arweave is the file hosting blockchain that most project use on Solana, it's sim
 We will be using Metaplex CLI to upload our file on Arweave
 
 Metadata defines your file and should be correctly setup, in most case, their is no way for you to modify them after upload, you'll have to upload them again
-This is the moment to talk about the upload cost
+
+You'll be able to find an Arweave fee calculator based on the size of the files you want to upload, see [HERE](https://55mcex7dtd5xf4c627v6hadwoq6lgw6jr4oeacqd5k2mazhunejq.arweave.net/71giX-OY-3LwXtfr44B2dDyzW8mPHEAKA-q0wGT0aRM)
 
 INSERT UPLOAD COST HERE
 
