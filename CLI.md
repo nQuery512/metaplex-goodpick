@@ -118,24 +118,25 @@ Then it sends your file.
 Let's run the following command:
 
 ```
-metaplex upload /home/dev/metaplex_good/assets --keypair /home/dev/.config/solana/devnet.json --env devnet
+metaplex upload ~/metaplex_good/assets --keypair ~/.config/solana/devnet.json --env devnet
 ```
 
-The first argument is your asset path, then --keypair is the path of your keypair usually located in ~/.config/solana/
+The first argument is your asset path, 
+Then --keypair is the path of your keypair usually located in ~/.config/solana/ where ~ is your home directory (/home/dev/ for exemple)
 The third argument is the network you want to use, here we are using devnet
 
 When the command succeed, you should see something like this :
 
 ```
-// Here I upload 4 images, named from 0.png to 3.png, same for metadata 0.json, 1.json... 
+// Here I have uploaded 4 images, named from 0.png to 3.png, same for metadata 0.json, 1.json... so I had 8 files in the assets folder ! 
 setting cache for 3
 Writing indices 0-3
 Done. Successful = true. If 'false' - rerun
 ```
 
 You should look into the full logs printed to your console, to see if anything went wrong,
-also, you are able to read the cache to find everything information needed, it's print a synthetized json with info on each sets and
-
+Also, you are able to read the cache to find every informations needed, it's print a synthetized json with info on each sets and it also show upload link of each images
+(We plan to releasing a script to help you getting all the upload link)
 
 Note: If some uploads doesn't succeed that's not uncommon, in fact; when you upload massively, it'll happen, but we got you covered.
 What you need to do is to relaunch the same command.
@@ -143,3 +144,18 @@ Since Metaplex is using a cache in ~/metaplex_goodpick/.cache, it keep tracks of
 That means that once a file is correctly uploaded, you can restart the command to upload the files who failed and the good one will be skipped, you will not have to pay for them again and they won't be uploaded, 
 
 After uploaded correctly, your upload should look like this on [arweave](https://jw4aqnpgl6gt3ma7dnfmhrbz62knne7uoly3ypxwkfejnlkf27ia.arweave.net/TbgINeZfjT2wHxtKw8Q59pTWk_Ry8bw-9lFIlq1F19A/)
+
+
+### Candy machine preparation
+Now that out file have been correctly uploaded, we are able to setup the candy machine, it's the program that will allow your website to enable the "mint by user" functionnality.
+
+In this section we will use 2 command of the metaplex CLI to, first, enable your candy-machine with a mint price (what will the user will pay to mint on your website), then to set a start data to your mint.
+
+#### Enable the candy machine
+In the metaplex directory, run the following command:
+metaplex create_candy_machine --price 0 --keypair ~/.config/solana/devnet.json
+``````
+
+You can use the command ```metaplex verify --keypair ~/.config/solana/devnet.json ``` to check if the mint 
+It'll print the state of each upload with the state of the candy-machine !
+
