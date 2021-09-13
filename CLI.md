@@ -1,4 +1,4 @@
-# Metaplex Command line interface 
+# How to mint NFTs using Metaplex Command Line Interface (CLI)
 ## Description
 Installing this tools will allow you to use Metaplex functionnality, without the store to spin up a store, very useful.
 At the end of this tutorial you will be able to prepare everything to be able to build a fair launch using the Metaplex Candy Machine.
