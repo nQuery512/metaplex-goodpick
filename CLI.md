@@ -189,4 +189,5 @@ metaplex mint_one_token --keypair ~/.config/solana/devnet.json
 
 After executing this command you should receive the NFT instantly in your wallet but that mean that your candy machine lost one on its NFT
 
+![NFT](https://github.com/nQuery512/metaplex-goodpick/blob/main/docs/nfts.PNG)
 
