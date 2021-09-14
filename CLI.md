@@ -187,7 +187,7 @@ ps: With this command, you can only send to the wallet linked to the keypair you
 metaplex mint_one_token --keypair ~/.config/solana/devnet.json
 ```
 
-After executing this command you should receive the NFT instantly in your wallet that is linked to the keypair you provided, that mean that your candy machine lost one on its NFT
+After executing this command you should receive the NFT instantly in your wallet that is linked to the keypair you provided, that mean that your candy machine lost one on its NFT and you mitned it successfully ! 
 
 ![NFT](https://github.com/nQuery512/metaplex-goodpick/blob/main/docs/nfts.PNG)
 
