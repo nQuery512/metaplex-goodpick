@@ -44,8 +44,14 @@ You should have configured the same wallet on phantom and the solana cli in orde
 
 This is required if you want to give you some NFTs using the mint_one_command() Metaplex CLI function, but you can do it also from the frontend without the need to do this section 
 
-COMING SOON
-
+```
+solana-keygen new
+``` 
+ -> this will create a new identity file id.json and output a seed phrase
+- now take that seed phrase and bring it to solflare.com, click access, paste the seed phrase and choose the Phantom derivation path (44/501/0/0)
+- once you are in, export your private key. It will look like an array of integers [123, 123, 123, 123, 123.....]
+- take that array and paste it into the id.json file generated at the beginning  (the content will be of the same format but with different numbers... just overwrite everything)
+- now you can take the seed phrase and bring it to phantom: the address will be the same of your cli and synced 
 
 ## File and Metadata
 ### Description
